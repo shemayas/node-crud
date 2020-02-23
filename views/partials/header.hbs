@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav">
+        {{> header/menuItem url="/" linkText="דף הבית"}}
+        {{#if session.user}}
+            {{> header/menuItem url="/customer/account" linkText="חשבון שלי"}}
+            {{> header/menuItem url="/customer/account/logout" linkText="יציאה"}}
+        {{else}}
+            {{> header/menuItem url="/customer/account/login" linkText="כניסה"}}
+        {{/if}}
+    </ul>
+</nav>
