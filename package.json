@@ -13,6 +13,10 @@
     "mongoose": "^5.8.6"
   },
   "devDependencies": {
+    "mocha": "^7.0.1",
     "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
   }
 }
